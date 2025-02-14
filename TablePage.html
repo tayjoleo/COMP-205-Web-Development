@@ -1,0 +1,105 @@
+<!doctype html>
+<!-- Taylor Evans-->
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <link rel ="stylesheet" type = "text/css" href = "./css/DoughBoysCookiesWebsite.css">
+    <title>HOW MUCH?!</title>
+</head>
+
+<body>
+    <h1>DOUGH BOY'S COOKIES</h1>
+    <img src = "./imgs/DoughBoyLogo.png" height = "150" width ="150" alt ="DoughBoy">
+    <h2>"Savour the Sweetness"</h2>
+
+    <div class = "navflexcontainer">
+        <div class = "navflexitem"><a href ="index.html">Home</a></div>
+        <div class = "navflexitem"><a href ="TablePage.html">Table</a></div>
+        <div class = "navflexitem"><a href ="ImagesPage.html">Images</a></div>
+        <div class = "navflexitem"><a href ="FormsPage.html">Form</a></div>
+        <div class = "navflexitemspacing">&nbsp;</div>
+        <div class = "navflexitemsocialmedia"><a href ="https://www.facebook.com"><img src = "./imgs/FacebookLogo.png" height = "20" width ="20" alt ="Facebook"></a></div>
+        <div class = "navflexitemsocialmedia"><a href ="https://twitter.com"><img src = "./imgs/TwitterLogo.png" height = "20" width ="20" alt ="Twitter"></a></div>
+    </div>
+
+    <div class = "maincontainer">
+    <table id = "cookiesTable">
+       <tr> 
+            <th colspan ="5">Our Cookie's</th>
+       </tr>
+
+        <tr>
+            <th rowspan ="6">Always Fresh</th>
+            <th>Single</th>
+            <th>6</th>
+            <th>Baker's 12</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>1.99</td>
+            <td>10.99</td>
+            <td>23.99</td>
+            <td>Chocolate Chip</td>
+        </tr>
+
+        <tr>
+            <td>1.99</td>
+            <td>10.99</td>
+            <td>23.99</td>
+            <td>Double Chocolate</td>
+        </tr>
+
+        <tr>
+            <td>1.99</td>
+            <td>10.99</td>
+            <td>23.99</td>
+            <td>Butter Pecan</td>
+        </tr>
+
+        <tr>
+            <td>2.69</td>
+            <td>11.99</td>
+            <td>24.99</td>
+            <td>Birthday Cookie</td>
+        </tr>
+
+        <tr>
+            <td>2.69</td>
+            <td>11.99</td>
+            <td>24.99</td>
+            <td>Oreo Crumble</td>
+        </tr>
+    </table>
+    </div>
+
+    <button onclick = "changeTable()">Change that table!</button>
+    
+    <div class = "footercontainer">
+        <footer>Taylor Evans | <a href= "mailto:taylor.evans@student.sl.on.ca">taylor.evans@student.sl.on.ca</a> | <span id="showDate"></span></footer>
+    </div>
+
+    <script>
+        function showDate() {
+            var currentTime =  new Date();
+            var options = { month: 'long', day: 'numeric', year: 'numeric' };
+            var formattedDate = currentTime.toLocaleDateString('en-US', options);
+        
+        document.getElementById("showDate").innerHTML = formattedDate;
+        }
+        
+        window.addEventListener("load", showDate);
+        
+        function changeTable() {
+            var table = document.getElementById("cookiesTable");
+        
+                table.style.color = 'black';
+                table.style.borderWidth = '0.6em';
+                table.style.borderStyle = 'ridge';
+                table.style.borderColor = '#FFCEC2';
+                table.style.padding = '2em';
+                }
+    </script>
+
+</body>
+</html>

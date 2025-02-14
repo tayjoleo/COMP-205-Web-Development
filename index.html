@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- Taylor Evans-->
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <link rel ="stylesheet" type = "text/css" href = "./css/DoughBoysCookiesWebsite.css">
+    <title>DOUGH BOY'S COOKIES</title>
+</head>
+
+<body>
+    <h1>DOUGH BOY'S COOKIES</h1>
+    <img src = "./imgs/DoughBoyLogo.png" height = "150" width ="150" alt = "DoughBoy">
+    <h2>"Savour the Sweetness"</h2>
+
+    <div class = "navflexcontainer">
+        <div class = "navflexitem"><a href = "index.html">Home</a></div>
+        <div class = "navflexitem"><a href = "TablePage.html">Table</a></div>
+        <div class = "navflexitem"><a href = "ImagesPage.html">Images</a></div>
+        <div class = "navflexitem"><a href = "FormsPage.html">Form</a></div>
+        <div class = "navflexitemspacing">&nbsp;</div>
+        <div class = "navflexitemsocialmedia"><a href ="https://www.facebook.com"><img src = "./imgs/FacebookLogo.png" height = "20" width ="20" alt ="Facebook"></a></div>
+        <div class = "navflexitemsocialmedia"><a href = "https://twitter.com"><img src = "./imgs/TwitterLogo.png" height = "20" width ="20" alt ="Twitter"></a></div>
+    </div>
+    
+    <div class = "maincontainer">
+    <h3>Our mission is simple: making the best darn <span class = "cookies-text">cookies</span> you've ever tasted.</h3>
+        <p>What sets our <span class = "cookies-text">cookies</span> apart? They are objectively delicious.</p>
+        <p>How? Shhh, it’s a secret.</p>
+        <p>What we can tell you is that we use top-notch ingredients mixed with a whole lot of passion to create 
+            <span class = "cookies-text">cookies</span> that are soft, chewy, and packed with flavour.</p>
+        <p>But here's the real deal – our 
+            <span class = "cookies-text">cookies</span> are known for putting smiles on faces. Whether you're treating yourself or sharing with friends, Dough Boy's 
+            <span class = "cookies-text">cookies</span> are engineered to make all of life’s moments a little sweeter.</p>
+        <p>If you don’t believe us, we get it. Ultimately it just means more <span class = "cookies-text">cookies</span> for us.</p>
+        <p>We have all of the classics you could ever want and are constantly trying new combinations to see if we can find the next great 
+            <span class = "cookies-text">cookie</span>. We won’t stop until we accomplish our goal and find the long lost sister to the Chocolate Chip 
+            <span class = "cookies-text">cookie</span>. We are always looking for suggestions so if you have a flavour combo that you think we should try, 
+            let us know and you might just end up with your name on one of Dough Boy’s <span class = "cookies-text">cookies</span>.</p>
+        <p>Check out what we have to offer below.</p>
+
+    <ol>
+        <li>Chocolate Chip</li>
+        <li>Double Chocolate</li>
+        <li>Butter Pecan
+            <ul>
+                <li>Only available on Monday</li>
+                <li>Maximum order of 13 per customer</li>
+            </ul>
+        <li>Birthday Cookie</li>
+        <li>Oreo Crumble
+            <ul>
+                <li>Only available on Saturday + Sunday</li>
+            </ul>
+    </ol>
+    
+    </div>
+        <div class = "footercontainer">
+            <footer>Taylor Evans | <a href= "mailto:taylor.evans@student.sl.on.ca">taylor.evans@student.sl.on.ca</a> | <span id="showDate"></span></footer>
+    </div>
+
+    <script>
+        function showDate() {
+            var currentTime =  new Date();
+            var options = { month: 'long', day: 'numeric', year: 'numeric' };
+            var formattedDate = currentTime.toLocaleDateString('en-US', options);
+        
+        document.getElementById("showDate").innerHTML = formattedDate;
+        }
+        
+        window.addEventListener("load", showDate);
+        </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* Taylor Evans */
+
+.navflexcontainer {
+    margin-bottom: 2em;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#BCA7E8;
+    border-color:#FFCEC2;
+    border-style: dotted;
+    border-width: 1em;
+}
+
+.navflexitem {
+    flex:auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 2em;
+    padding: 0.5em;
+    background-color:#BCA7E8;
+    color:#FFCEC2;
+    font-family: "Optima", "Cambria", "sans serif";
+    text-shadow:0.1em 0.1em 0 rgba(0,0,0,0.2);
+}
+
+.navflexitemspacing {
+    flex:3;
+}
+
+.navflexitemsocialmedia {
+    flex: 0.1;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    padding: 0.1em;
+}
+
+.maincontainer {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: auto;
+    margin-left: auto;
+    padding: 1em;
+    min-width: 20em;
+    background-color: #BCA7E8;
+    border-collapse: collapse;
+    border-color:#FFCEC2;
+    border-style: dotted;
+    border-width: 1em;
+}
+
+.footercontainer {
+    color:#FF0000;
+    background-color:#FFCEC2;
+    margin: auto;
+    text-align: center;
+    padding: 3em;
+}
+
+.cookies-text {
+    font-style:italic;
+    color:#FF0000;
+}
+
+body {
+    background-color: #FFCEC2;
+    color: #FF0000;
+    font-family: "Cambria", "Optima", "sans serif";
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: normal;
+}
+
+figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagespagemainflexcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imagespagemainflexitem {
+    flex: 1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    margin: 2em;
+    background-color: #BCA7E8;
+    border-collapse: collapse;
+    border-color:#FFCEC2;
+    border-style: dotted;
+    border-width: 1em;
+}
+
+label{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    align-items: center;
+}
+
+select  {
+    vertical-align: middle;
+}
+
+form input {
+    width: 35%;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    align-content: center;
+}
+
+form input[type="text"], form input[type="number"] {
+    font-size: 1em;
+}
+
+form input[type="radio"] {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+form input[type="checkbox"] {
+    display: flex;
+    margin-bottom:2em;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+form select {
+    width: 20%;
+    padding: 1em;
+    margin-bottom: 1em;
+    
+}
+
+form input[type="submit"] {
+    background-color:#FFCEC2;
+    color:#000000;
+    padding: 1em 1em;
+}
+
+ol {
+    text-align: left;
+    list-style-type: upper-alpha;
+}
+
+ul {
+    text-align: left;
+}
+
+ol ul {
+    text-align: left;
+    list-style-type: square;
+}
+
+
+table {
+    width: 80%;
+    margin: auto;
+    padding: 4em;
+    border-collapse: collapse;
+    border-color: #FFCEC2;
+    border-style: dotted;
+    border-width: 0.2em;
+}
+
+a {
+    font-size: 1.1em;
+}
+
+a:link {
+    color: mediumblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: mediumvioletred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+a:active {
+    color: aqua;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #BCA7E8;
+    font-weight: bold;
+    font-size: 4em;
+    border-color: #BCA7E8;
+    border-style: dotted;
+    border-width: 0.2em;
+}
+
+h2 {
+    font-size: 1.9em;
+    font-style: italic;
+    color: #BCA7E8;
+}
+
+p {
+    color: #000000;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}

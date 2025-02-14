@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- Taylor Evans-->
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <link rel ="stylesheet" type = "text/css" href = "./css/DoughBoysCookiesWebsite.css">
+    <title>FEAST YOUR EYES</title>
+</head>
+   
+<body>
+    <h1>DOUGH BOY'S COOKIES</h1>
+    <img src = "./imgs/DoughBoyLogo.png" height = "150" width ="150" alt ="DoughBoy">
+    <h2>"Savour the Sweetness"</h2>
+
+    <div class = "navflexcontainer">
+        <div class = "navflexitem"><a href ="index.html">Home</a></div>
+        <div class = "navflexitem"><a href ="TablePage.html">Table</a></div>
+        <div class = "navflexitem"><a href ="ImagesPage.html">Images</a></div>
+        <div class = "navflexitem"><a href ="FormsPage.html">Form</a></div>
+        <div class = "navflexitemspacing">&nbsp;</div>
+        <div class = "navflexitemsocialmedia"><a href ="https://www.facebook.com"><img src = "./imgs/FacebookLogo.png" height = "20" width ="20" alt ="Facebook"></a></div>
+        <div class = "navflexitemsocialmedia"><a href ="https://twitter.com"><img src = "./imgs/TwitterLogo.png" height = "20" width ="20" alt ="Twitter"></a></div>
+    </div>
+
+    <div class = "imagespagemainflexcontainer">
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/BirthdayCookie1.JPG" height="250" width ="350" alt="Birthday Cookies">
+                <figcaption>Birthday Cookies</figcaption>
+            </figure>
+
+            <p>Don't forget that it is always someone's birthday somewhere in the world. It doesn't have to be your birthday to have one (or a dozen).</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/BirthdayCookie2.JPG" height="250" width ="255" alt="More Birthday Cookies">
+                <figcaption>More Birthday Cookies</figcaption>
+            </figure>
+    
+            <p>Life is often busy and life is often hard. Take a moment to celebrate YOU with something sweet from our bakery. You deserve it.</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/OreoCrumble1.JPG" height="250" width ="350" alt="Oreo Crumble Cookies">
+                <figcaption>Oreo Crumble Cookies</figcaption>
+            </figure>
+
+            <p>Sometimes you have to break a cookie to make a cookie, it is the circle of life! Or the circle of cookie to be exact!</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/OreoCrumble2.JPG" height="250" width ="260" alt="More Oreo Crumble Cookies">
+                <figcaption>More Oreo Crumble Cookies</figcaption>
+            </figure>
+
+            <p>All in the name of science and deliciousness, we have taken your favourite cookie down to the essential components and built it back 
+                into something new and exciting</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/CookieSplit.JPG" height="250" width ="350" alt="Butter Pecan Split">
+                <figcaption>Inside The Butter Pecan</figcaption>
+            </figure>
+
+            <p>If you are scrolling this page on a work computer, you may have to explain this to your boss. Just bring them one and they'll forgive you, we promise.</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/ButterPecan1.JPG" height="250" width ="275" alt="Butter Pecan Cookies">
+                <figcaption>Butter Pecan Cookies</figcaption>
+            </figure>
+   
+            <p>This cookie just returned from the Cookie Olympics where they won Gold in nearly every category. If it wasn't for those Red Velvets it would have 
+                been a sweep!.</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/ButterPecan3.JPG" height="250" width ="325" alt="More Butter Pecan Cookies">
+                <figcaption>More Butter Pecan Cookies</figcaption>
+            </figure>
+   
+            <p>Brown Butter Toffee Toasted Pecan is this cookie's government name, it's a moutful we know. All of its friends call it Butter Pecan, you can too.</p>
+        </div>
+
+        <div class = "imagespagemainflexitem">
+            <figure>
+                <img src="./imgs/ButterPecan4.JPG" height="250" width ="265" alt="Even More Butter Pecan Cookies">
+                <figcaption>Even More Butter Pecan Cookies</figcaption>
+            </figure>
+   
+            <p>We know we are not supposed to pick favourites, but this one might be ours. Whatever you do, don't tell the others! We don't want any hurt feelings.</p>
+        </div>    
+    </div>
+
+    <button onclick = "scrollToTop()">Back to the top!</button>
+
+    <div class = "footercontainer">
+        <footer>Taylor Evans | <a href= "mailto:taylor.evans@student.sl.on.ca">taylor.evans@student.sl.on.ca</a> | <span id="showDate"></span></footer>
+    </div>
+
+        <script>
+
+            function showDate() {
+                var currentTime =  new Date();
+                var options = { month: 'long', day: 'numeric', year: 'numeric' };
+                var formattedDate = currentTime.toLocaleDateString('en-US', options);
+            
+            document.getElementById("showDate").innerHTML = formattedDate;
+            }
+            
+            window.addEventListener("load", showDate);
+            
+            function scrollToTop() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        </script>
+
+</body>
+</html>
